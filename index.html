@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="SCSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navigation">
+                <ul>
+                   <li>
+                      <a href="#">
+                          <span class="icon"><ion-icon name="logo-apple"></ion-icon></span>
+                          <span class="title">Apple</span>
+                      </a>
+                   </li>
+      
+                   <li>
+                      <a href="#">
+                          <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                          <span class="title">Dashboard</span>
+                      </a>
+                   </li>
+      
+                   <li>
+                      <a href="#">
+                          <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                          <span class="title">Clienti</span>
+                      </a>
+                   </li>
+      
+                   <li>
+                      <a href="#">
+                          <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
+                          <span class="title">Messaggi</span>
+                      </a>
+                   </li>
+      
+                   <li>
+                      <a href="#">
+                          <span class="icon"><ion-icon name="help-outline"></ion-icon></span>
+                          <span class="title">Aiuto</span>
+                      </a>
+                   </li>
+      
+                   <li>
+                      <a href="#">
+                          <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                          <span class="title">Impostazioni</span>
+                      </a>
+                   </li>
+      
+                   <li>
+                      <a href="#">
+                          <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                          <span class="title">Password</span>
+                      </a>
+                   </li>
+      
+                   <li>
+                      <a href="#">
+                          <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                          <span class="title">Esci</span>
+                      </a>
+                   </li>
+                </ul>
+            </nav><!--fine .navigation-->
+        </header>
+
+
+        <main class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Cerca">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div><!--fine div search-->
+
+                <div class="user">
+                   <img src="img/user.png" alt="utente">
+                </div>
+            </div><!--fine div-topbar-->
+
+
+            <div class="cardBox">
+               <div class="card">
+                  <div>
+                       <div class="numbers">1,504</div>
+                       <div class="cardName">Views giornaliere</div>
+                  </div>
+
+                  <div class="iconBox">
+                       <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+               </div><!--fine div card-->
+
+                <div class="card">
+                    <div>
+                       <div class="numbers">80</div>
+                       <div class="cardName">Vendite</div>
+                    </div>
+
+                    <div class="iconBox">
+                        <ion-icon name="cart-outline"></ion-icon>
+                    </div>
+                </div><!--fine div card-->
+
+                <div class="card">
+                    <div>
+                       <div class="numbers">284</div>
+                       <div class="cardName">Commenti</div>
+                    </div>
+  
+                    <div class="iconBox">
+                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                    </div>
+                </div><!--fine div card-->
+
+                <div class="card">
+                    <div>
+                       <div class="numbers">€7,842</div>
+                       <div class="cardName">Fatturato</div>
+                    </div>
+  
+                    <div class="iconBox">
+                        <ion-icon name="cash-outline"></ion-icon>
+                    </div>
+                </div><!--fine div card-->
+            </div><!--fine div cardBox-->
+
+
+            <div class="graphBox">
+               <div class="box">
+                  <canvas id="myChart"></canvas>
+                </div>
+               <div class="box">
+                   <canvas id="earning"></canvas>
+               </div>
+            </div>
+
+
+            <div class="details">
+               <div class="recentOrders">
+                  <div class="cardHeader">
+                     <h2>Ordini recenti</h2>
+                     <a href="#" class="btn">Visualizza tutto</a>
+                  </div>
+
+                  <table>
+                      <thead>
+                          <tr>
+                            <th>Nome</th>
+                            <th>Prezzo</th>
+                            <th>Pagamento</th>
+                            <th>Status</th>
+                          </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                            <td>Frigorigero</td>
+                            <td>€1200</td>
+                            <td>Pagato</td>
+                            <td><span class="delivered">Consegnato</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Condizionatore</td>
+                            <td>€1000</td>
+                            <td>Dovuto</td>
+                            <td><span class="pending">In attesa</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Casse stereo</td>
+                            <td>€200</td>
+                            <td>Pagato</td>
+                            <td><span class="return">Restituito</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>HP Laptop</td>
+                            <td>€500</td>
+                            <td>Da pagare</td>
+                            <td><span class="inprogress">In corso</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>HP Laptop</td>
+                            <td>€500</td>
+                            <td>Pagato</td>
+                            <td><span class="delivered">Consegnato</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Ventilatore</td>
+                            <td>€110</td>
+                            <td>Pagato</td>
+                            <td><span class="pending">In attesa</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Scarpe Adidas</td>
+                            <td>€60</td>
+                            <td>Pagato</td>
+                            <td><span class="return">Restituito</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Magliette Denim</td>
+                            <td>€40</td>
+                            <td>Da pagare</td>
+                            <td><span class="inprogress">In corso</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Scarpe Casual</td>
+                            <td>€50</td>
+                            <td>Pagato</td>
+                            <td><span class="pending">In attesa</span></td>
+                        </tr>
+                      </tbody>
+                  </table>
+               </div><!--fine div.recentOrders-->
+
+               <div class="recentCustomers">
+                  <div class="cardHeader">
+                    <h2>Clienti recenti</h2>
+                  </div><!--fine div cardHeader-->
+
+                  <table>
+                    <tr>
+                      <td width="60px">
+                        <div class="imgBox">
+                            <img src="img/img1.png">
+                        </div>
+                      </td>
+
+                      <td>
+                        <h4>Andrea<br>
+                          <span>Italia</span>
+                        </h4>
+                      </td>
+                    </tr>
+
+                    <tr>
+                        <td width="60px">
+                          <div class="imgBox">
+                              <img src="img/img2.png">
+                          </div>
+                        </td>
+  
+                        <td>
+                          <h4>Muhammad<br>
+                            <span>India</span>
+                          </h4>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td width="60px">
+                          <div class="imgBox">
+                              <img src="img/img3.png">
+                          </div>
+                        </td>
+  
+                        <td>
+                          <h4>Amelia<br>
+                            <span>Francia</span>
+                          </h4>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td width="60px">
+                          <div class="imgBox">
+                              <img src="img/img4.png">
+                          </div>
+                        </td>
+  
+                        <td>
+                          <h4>Elisabeth<br>
+                            <span>USA</span>
+                          </h4>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td width="60px">
+                          <div class="imgBox">
+                              <img src="img/img5.png">
+                          </div>
+                        </td>
+  
+                        <td>
+                          <h4>Kaito<br>
+                            <span>Giappone</span>
+                          </h4>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td width="60px">
+                          <div class="imgBox">
+                              <img src="img/img6.png">
+                          </div>
+                        </td>
+  
+                        <td>
+                          <h4>Momoa<br>
+                            <span>Australia</span>
+                          </h4>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td width="60px">
+                          <div class="imgBox">
+                              <img src="img/img7.png">
+                          </div>
+                        </td>
+  
+                        <td>
+                          <h4>Catherin<br>
+                            <span>UK</span>
+                          </h4>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td width="60px">
+                          <div class="imgBox">
+                              <img src="img/img8.png">
+                          </div>
+                        </td>
+  
+                        <td>
+                          <h4>Francisco<br>
+                            <span>Spagna</span>
+                          </h4>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td width="60px">
+                          <div class="imgBox">
+                              <img src="img/img9.png">
+                          </div>
+                        </td>
+  
+                        <td>
+                          <h4>Chi<br>
+                            <span>Cina</span>
+                          </h4>
+                        </td>
+                      </tr>
+                  </table>
+               </div><!--fine div .recentCustomers-->
+            </div><!--fine div.details-->
+        </main>  
+    </div><!--fine div.container-->
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+
+    <!--chart.js-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <script src="JS/custom-chart.js"></script>
+
+    <script src="JS/menu-toggle.js"></script>
+    <script src="JS/list.js"></script>
+</body>
+</html>
